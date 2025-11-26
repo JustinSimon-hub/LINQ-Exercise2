@@ -22,6 +22,9 @@ namespace LINQ
                 "Halo Infinite",
                 "Cyberpunk 2077"
             };
+            videoGames.Add("Fallout 3");
+            Console.WriteLine($"{videoGames.Count} is the number of games.");
+            videoGames.Add("Star wars: Knights of the Old Republic");
             var orderedGames = videoGames.OrderBy(game => game.Length);
             Console.WriteLine("Video games ordered by length of name:");
             foreach (var game in orderedGames)
